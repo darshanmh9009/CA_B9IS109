@@ -1,0 +1,114 @@
+.taskbar {
+    padding: 10px;
+    width: 400px;
+    height: 98vh;
+    margin-left: 1vw;
+    margin-block: auto;
+    background-color: var(--bg-dirty);
+    border: .5px solid var(--light-grey);
+    border-radius: var(--radius);
+    overflow-y: scroll;
+    overflow-x: visible;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0px 0px 50px var(--light-grey);
+}
+
+.taskbar.collapse {
+    width: 65px;
+}
+
+::-webkit-scrollbar {
+    width: 0px !important;
+}
+
+.tasks-list {
+    margin-top: 30px;
+}
+
+.task-item {
+    padding: 20px 10px;
+    color: var(--black);
+    border-bottom: 1px dashed var(--black);
+    background-color: var(--bg-dirty);
+    transition: all 200ms ease;
+    align-items: center;
+}
+
+.task-item img {
+    min-width: 20px !important;
+    height: 20px;
+}
+
+.task-item-hover:hover {
+    background-color: var(--white);
+    padding-left: 30px;
+}
+
+.taskbar-btn {
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.collapse .taskbar-btn .arrow-img {
+    margin: auto auto;
+}
+
+.taskbar-btn-2 {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    z-index: 0;
+}
+
+.arrow-img {
+    width: 15px;
+    height: auto;
+}
+
+@media (max-width: 1000px) {
+    .task-item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    .task-item {
+        border: none;
+        padding-inline: 5px;
+        justify-content: left;
+        max-height: 80px;
+    }
+
+    .taskbar {
+        position: absolute;
+        top: 1vh;
+        width: 70vw;
+        justify-content: left;
+        padding: 5px;
+    }
+
+    .taskbar.collapse {
+        left: -65px;
+        width: 55px;
+    }
+
+    .task-btn {
+        position: absolute;
+        top: 0px;
+        left: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .task-btn {
+        width: 20px;
+        height: 20px;
+    }
+
+    .taskbar {
+        width: 90vw;
+    }
+}

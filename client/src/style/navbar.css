@@ -1,0 +1,322 @@
+/* ========== ========= Navbar CSS ======== ======== */
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 90%;
+    margin: auto auto;
+    border: var(--border) solid var(--grey);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top: none;
+    overflow: visible;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--white);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.logo-text {
+    display: inline-flex;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-links li {
+    display: block;
+    padding: 0 10px;
+    color: var(--black);
+    transition-duration: 200ms;
+}
+
+.nav-links li div {
+    padding: 20px 10px;
+    color: var(--black);
+    font-weight: 600;
+    font-size: 18px;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.nav-links li div:hover {
+    color: var(--pastel-red);
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-buttons li {
+    margin: auto 8px;
+}
+
+.nav-buttons li div {
+    color: var(--black);
+    cursor: pointer;
+}
+
+.sign-in {
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    transform: translateX(-20px);
+    background-color: var(--white);
+    text-align: left;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: 0 10px;
+    border-radius: 8px;
+}
+
+.dropdown-content div, .dropdown-content a {
+    color: var(--black);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.nav-links li div {
+    cursor: pointer;
+}
+
+.dropdown-content div:hover {
+    font-weight: 600;
+}
+
+.dropdown:hover > .dropdown-content {
+    display: block;
+}
+
+/* navigation bar lines for collapsable nav bar */
+.nav-lines {
+    display: none;
+    margin: auto 0;
+}
+
+.Bar {
+    width: 20px;
+    height: 2px;
+    background-color: var(--black);
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+a hr {
+    width: 0%;
+    border: 0.5px solid transparent;
+    transition: 300ms ease-in-out;
+}
+
+.cross {
+    display: none;
+    justify-content: right;
+    transform: translateY(-10px);
+    float: right;
+    padding-bottom: 20px;
+}
+
+.line1, .line2 {
+    width: 20px;
+    height: 2px;
+    background-color: var(--black);
+    border-radius: 10px;
+    display: inline-flex;
+}
+
+.line1 {
+    rotate: 45deg;
+    /* transform: translateX(10px); */
+    transform: translate(14px);
+}
+
+.line2 {
+    rotate: -45deg;
+    transform: translate(-14px);
+}
+
+.toggleDropDown {
+    position: absolute;
+    transform: translateX(-150px) translateY(40px);
+    padding: 15px 10px;
+    margin: 0px;
+    width: 180px;
+    text-align: right;
+    z-index: 100;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px #00000033;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toggleDropDown a {
+    color: var(--black);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 10px 22px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 200ms ease;
+}
+
+.toggleDropDown a:last-child {
+    color: var(--white);
+}
+
+.closeIcon {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .nav-links li a {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        margin: 0 0;
+        padding: 20px 30px;
+        margin: auto auto;
+        justify-content: space-between;
+    }
+
+    .nav-lines {
+        display: block;
+        cursor: pointer;
+    }
+
+    .cross {
+        display: inline-block;
+    }
+
+    .nav-links {
+        overflow-y: scroll;
+        position: absolute;
+        z-index: 3;
+        margin: 0 0;
+        display: block;
+        top: 100px;
+        left: 0px;
+        width: 90vw;
+        height: 0;
+        transform: 200ms;
+        overflow: hidden;
+        border-radius: 20px;
+        transition: all 200ms ease;
+    }
+
+    .nav-links.active {
+        height: fit-content;
+        padding: 10px 20px;
+        background-color: var(--white);
+        border: var(--border) solid var(--grey);
+    }
+
+    .nav-links li {
+        justify-content: center;
+        text-align: left;
+        font-weight: 600;
+    }
+
+    .nav-links li div {
+        font-weight: 600;
+        padding: 20px 10px;
+    }
+
+    .nav-links li:hover {
+        transform: scale(1);
+    }
+
+    .dropdown-content {
+        display: block;
+        position: relative;
+        transform: translateX(0);
+        background-color: var(--white);
+        box-shadow: none;
+        text-align: left;
+        min-width: 250px;
+        border-left: 1px solid var(--black);
+        border-radius: 0px;
+        margin-left: 20px;
+    }
+
+    .nav-links li div, .nav-links li p {
+        padding: 12px 0;
+    }
+
+    .dropdown-content div, .dropdown-content a {
+        padding: 12px 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo-text {
+        display: none;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .nav-buttons .sign-in {
+        display: none;
+    }
+
+    .nav-links {
+        width: 93vw;
+    }
+}

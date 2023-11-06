@@ -1,0 +1,227 @@
+/* -------- Variable CSS --------*/
+:root {
+    /* primary colors */
+    --white: #ffffff;
+    --grey: #b6b6b6;
+    --hover-grey: #e4e4e4;
+    --light-grey: #c4c3c3;
+    --matt-grey: #6c6c6c;
+    --dark-grey: #404040;
+    --black: #000000;
+    --black-transp: #00000080;
+
+    /* pastel colors */
+    --bg: #F5F2EC;
+    --bg-dirty: #EEECE8;
+    --bg-black: #171717;
+    --blue: #38C3FE;
+    --light-blue: #68D8FD;
+    --outline-blue: #27ABD9;
+    --green: #2CC386;
+    --pastel-yellow: #FEDC61;
+    --pastel-orange: #FE9246;
+    --outline-yellow: #E8C13A;
+    --outline-orange: #E06A1B;
+    --pastel-red: #fc6976;
+
+    --violet: #c244e9;
+    --light-violet: #e6c4f0;
+    --form-red: #fd4557d3;
+    --form-green: #2afc46b9;
+    --background: #F5F2EC;
+    --scroll: #949494;
+
+    /* other variables */
+    --border: 2px;
+    --circle: 60px;
+    --small-radius: 12px;
+    --big-radius: 30px;
+    --radius: 18px;
+}
+
+@font-face {
+    font-family: "Numpy";
+    src: url("../assets/fonts/NumptyDemoRegular.otf");
+}
+
+::selection {
+    background-color: var(--light-grey);
+}
+
+/* -------- Reset all web parameters -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+img,
+input,
+button,
+.icon {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--white);
+}
+
+.numpy {
+    font-family: "Numpy";
+}
+
+.bg-bg {
+    background-color: var(--background);
+}
+
+.flex {
+    display: flex;
+}
+
+.gap-10 {
+    gap: 5px;
+}
+
+.gap-15 {
+    gap: 20px;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.m-in-auto {
+    margin-inline: auto;
+}
+
+.sp-arnd {
+    justify-content: space-around;
+}
+
+.sp-btwn {
+    justify-content: space-between;
+}
+
+.txt-ctr {
+    text-align: center;
+}
+
+::placeholder {
+    color: var(--matt-grey);
+    font-weight: 400;
+}
+
+.big-heading {
+    font-size: 96px;
+    line-height: 90px;
+    letter-spacing: 4px;
+    padding-block: 30px;
+}
+
+.medium-heading {
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 3px;
+    padding-block: 20px;
+}
+
+.small-heading {
+    font-size: 34px;
+    line-height: 35px;
+    letter-spacing: 2px;
+    padding-block: 10px;
+}
+
+.big-text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--black);
+}
+
+.regular-text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: var(--black);
+}
+
+.small-text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.para-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.page-heading {
+    font-size: 48px;
+    text-align: center;
+    margin-block: 1vw;
+}
+
+.small-page-heading {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* -------- Block Scroll CSS -------- */
+.block-scroll {
+    overflow-y: hidden !important;
+}
+
+/* -------- ScrollBar CSS -------- */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 80vh;
+    margin-block: auto;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    height: 50vh;
+    background: var(--scroll);
+}
+
+/* -------- Loading CSS -------- */
+.loading-div {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-gif {
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,479 @@
+.profile {
+    width: 90vw;
+    margin: 2rem auto;
+    padding: 0px;
+    background-color: var(--bg-dirty);
+    border-radius: var(--big-radius);
+}
+
+.left-top {
+    border: var(--border) solid var(--grey);
+    border-right: 0px;
+    width: 400px;
+    padding: 15px 0px;
+    border-top-left-radius: var(--big-radius);
+
+}
+
+.right-top {
+    padding: 20px 40px;
+    width: 100%;
+    border: var(--border) solid var(--grey);
+    border-left: 0px;
+    border-top-right-radius: var(--big-radius);
+}
+
+.profile-pic {
+    display: block;
+    min-width: 230px;
+    width: 230px;
+    height: fit-content;
+    margin: auto auto;
+}
+
+.small-hidden .big-heading {
+    padding-block: 10px;
+}
+
+.edit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 40px;
+    color: var(--white);
+    background-color: var(--dark-grey);
+    border: var(--border) solid var(--grey);
+    border-radius: 4px;
+    margin: 10px auto;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: var(--black);
+}
+
+.profile-designation {
+    font-size: 20px;
+    font-weight: 600;
+    padding-inline: 4px;
+}
+
+.big-hidden .profile-designation {
+    width: fit-content;
+}
+
+.location-div {
+    align-items: center;
+    gap: 10px;
+}
+
+.bio,
+.streaks {
+    min-width: 250px;
+}
+
+.bio {
+    margin: 30px 0px 10px 0px;
+}
+
+.bio-title {
+    font-size: 18px;
+    font-size: 600;
+    padding: 0px 8px;
+    position: absolute;
+    transform: translateX(10px) translateY(-10px);
+    background-color: var(--bg-dirty);
+}
+
+.bio-body {
+    max-width: 400px;
+    min-width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: justify;
+    height: 110px;
+    padding: 15px 10px;
+    border: var(--border) solid var(--grey);
+    border-radius: var(--small-radius);
+}
+
+.streaks {
+    margin-block: 30px 10px;
+}
+
+.streaks-body {
+    display: flex;
+    min-width: 250px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.fire-icon {
+    position: absolute;
+    transform: translateY(-25px);
+    width: 20px;
+    background-color: var(--background);
+    border-radius: 100px;
+}
+
+.current-streak {
+    font-size: 28px;
+    width: var(--circle);
+    height: var(--circle);
+    border: 5px solid var(--black);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+}
+
+.big-hidden {
+    display: none;
+}
+
+.longest-streak {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.longest-streak-no {
+    width: 100%;
+    text-align: center;
+}
+
+.strek-title {
+    font-size: 12px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.streak-date {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.middle {
+    display: flex;
+}
+
+.left-middle,
+.right-middle {
+    padding: 20px 40px;
+    border: var(--border) solid var(--grey);
+    border-top: 0px;
+}
+
+.left-middle {
+    width: 400px;
+    padding: 10px 20px;
+    border-right: 0px;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: var(--big-radius);
+}
+
+.right-middle {
+    width: 100%;
+    padding: 10px;
+    border-bottom-right-radius: var(--big-radius);
+}
+
+.right-middle .projects {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: fit-content;
+}
+
+.right-middle .projects .project {
+    max-width: 300px;
+}
+
+.contact-title {
+    margin-block: 40px 10px;
+}
+
+.contact-title:first-child {
+    margin-block: 10px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 600;
+    width: 220px;
+    padding: 8px 10px;
+    margin: 6px 0px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 2px 2px 1px var(--black);
+}
+
+.contact-icon {
+    width: 20px;
+}
+
+#blue-bg-color {
+    background-color: var(--blue);
+}
+
+#orange-bg-color {
+    background-color: var(--pastel-orange);
+}
+
+#yellow-bg-color {
+    background-color: var(--pastel-yellow);
+}
+
+#green-bg-color {
+    background-color: var(--green);
+}
+
+#violet-bg-color {
+    background-color: var(--light-violet);
+}
+
+.right-middle .projects {
+    margin-inline: 0px;
+}
+
+@media (max-width: 1110px) {
+    .profile {
+        width: 95%;
+    }
+
+    .bio-body {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .right-top {
+        padding: 15px;
+    }
+
+    .profile-name {
+        font-size: 56px;
+    }
+
+    .location-div {
+        margin-left: 30px;
+    }
+
+    .bio-body,
+    .streaks {
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    .top {
+        flex-wrap: wrap;
+    }
+
+    .left-top {
+        width: 95vw;
+        border-right: var(--border) solid var(--grey);
+        border-top-right-radius: var(--big-radius);
+        border-bottom: none;
+        display: flex;
+        gap: 30px;
+        justify-content: left;
+        padding-inline: 20px;
+    }
+
+    .profile-pic {
+        width: 200px;
+        margin: 0;
+    }
+
+    .right-top {
+        width: 100%;
+        border-radius: 0px;
+        border: var(--border) solid var(--grey);
+    }
+
+    .right-top .bio-title {
+        font-weight: 600;
+    }
+
+    .right-top .streaks {
+        max-width: 350px;
+    }
+
+    .edit-btn {
+        width: 60%;
+        margin: 0px;
+    }
+
+    .location-div {
+        margin: 10px 0px 10px 0px;
+        gap: 5px;
+    }
+
+    .profile-designation {
+        display: block;
+    }
+
+    .bio-flex {
+        justify-content: center;
+    }
+
+    .big-hidden {
+        width: 100%;
+        display: block;
+    }
+
+    .small-hidden {
+        display: none;
+    }
+
+    .small-heading {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .projects {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .profile {
+        padding-block: 0px;
+        border-radius: var(--big-radius);
+    }
+
+    .edit-btn {
+        width: 80%;
+    }
+
+    .middle {
+        flex-wrap: wrap;
+    }
+
+    .left-middle {
+        display: flex;
+        width: 100%;
+        border: var(--border) solid var(--grey);
+        border-top: 0px;
+        border-radius: 0px;
+        padding: 10px;
+    }
+
+    .right-middle {
+        border-bottom-left-radius: var(--big-radius);
+    }
+
+    .contact-item {
+        margin-inline: auto;
+    }
+
+    .bio-flex {
+        flex-wrap: wrap;
+    }
+
+    .bio-body, .streaks {
+        max-width: 100% !important;
+        height: auto;
+    }
+
+    .bio,
+    .streaks {
+        margin-block: 0px;
+    }
+
+    .profile-pic {
+        width: 150px;
+    }
+
+    .profile-name {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 500px) {
+    .top {
+        border: var(--border) solid var(--grey);
+        border-top-left-radius: var(--big-radius);
+        border-top-right-radius: var(--big-radius);
+    }
+
+    .right-top {
+        border: none;
+    }
+
+    .left-top {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: none;
+    }
+
+    .big-hidden .profile-designation {
+        margin: 0px auto 20px auto;
+    }
+
+    .edit-btn {
+        margin: auto auto;
+    }
+
+    .big-hidden {
+        text-align: center;
+    }
+
+    .location-div {
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .location-icon {
+        width: 15px;
+    }
+
+    .bio-body {
+        font-size: 14px;
+        height: fit-content;
+    }
+}
+
+/* edit modal form css */
+.close-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.edit-modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black-transp);
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    overflow-y: hidden;
+}
+
+.edit-modal .form {
+    position: absolute;
+    z-index: 100;
+    margin: 0px;
+    top: 5vh;
+    left: 25vw;
+    width: 50vw;
+    height: 90vh;
+    padding-inline: 60px;
+    box-shadow: 0px 0px 200px var(--black);
+    overflow-y: scroll;
+}
