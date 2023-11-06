@@ -1,0 +1,61 @@
+.create-form-width {
+    width: 90vw;
+    border-radius: var(--big-radius);
+}
+
+.create-sub-form {
+    width: 50%;
+}
+
+.add-task-btn {
+    width: 300px !important;
+}
+
+.add-task-el {
+    margin-inline: 10px;
+}
+
+.plus-icon {
+    width: 20px !important;
+}
+
+.btn-flex {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--white) !important;
+    background-color: var(--black) !important;
+    border: none !important;
+}
+
+@media (max-width: 1000px) {
+    .create-form-width {
+        width: 95vw;
+    }
+
+    .create-form {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 700px) {
+    .create-sub-form {
+        width: 100%;
+    }
+
+    .add-task-btn {
+        width: 250px !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .add-task-el {
+        margin-inline: 10px;
+        margin-block: 0px !important;
+        flex-wrap: wrap;
+    }
+
+    .form-btn {
+        margin-block: 0px !important;
+    }
+}

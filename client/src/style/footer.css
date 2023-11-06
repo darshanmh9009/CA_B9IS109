@@ -1,0 +1,128 @@
+.footer {
+    width: 90vw;
+    margin: auto auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom: none;
+    padding: 70px 40px 10px 40px;
+    border: var(--border) solid var(--grey);
+    background-color: var(--bg-dirty);
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto auto;
+}
+
+.foot-section {
+    min-width: 100px;
+    margin: 20px 0;
+}
+
+.foot-section div {
+    margin: 20px 0;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.foot-section > .heading {
+    padding: 0 0 15px 0;
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-logo {
+    width: 150px;
+    height: 150px;
+    color: var(--white);
+    border: 1px solid var(--light-grey);
+}
+
+hr {
+    border: 0.5px solid var(--dark-grey);
+    width: 90%;
+    margin: auto auto;
+}
+
+.below-footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 90%;
+    margin: auto auto;
+    color: var(--black);
+}
+
+.below-footer-links > li > div {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.below-footer-section {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.below-footer-section span {
+    font-size: 18px;
+    color: var(--black);
+    align-items: center;
+    cursor: pointer;
+}
+
+.privacy-policy {
+    display: flex;
+    justify-content: center;
+}
+
+.privacy-policy li div {
+    margin: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .foot-section {
+        min-width: 200px;
+        padding-left: 40px;
+    }
+
+    .footer-logo {
+        width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 5px;
+    }
+
+    .foot-section {
+        padding-left: 0px;
+    }
+
+    .below-footer-links {
+        justify-content: center;
+        font-weight: 600;
+        gap: 0px;
+    }
+
+    .footer .gap30 {
+        gap: 0px;
+    }
+
+    .below-footer-section span {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+    }
+}

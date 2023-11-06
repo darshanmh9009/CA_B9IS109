@@ -1,0 +1,32 @@
+.admin-project-roles {
+    width: 60vw;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-role {
+    height: 150px;
+    color: var(--black);
+    border-radius: var(--radius);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.create-project {
+    background-color: var(--pastel-yellow);
+}
+
+.view-project {
+    background-color: var(--green);
+}
+
+.update-project {
+    background-color: var(--light-blue);
+}
+
+.delete-project {
+    background-color: var(--form-red);
+}
